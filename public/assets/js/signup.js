@@ -3,7 +3,14 @@ $(document).ready(function() {
   var signUpForm = $("form.signup");
   var emailInput = $("input#email-input");
   var passwordInput = $("input#password-input");
+  var show = $(".show");
+  var hide = $(".hide");
 
+  show.on("click", function(event){
+    event.preventDefault();
+    show.addClass("hide").removeClass("show");
+    hide.addClass("show").removeClass("hide");
+  });
   // When the signup button is clicked, we validate the email and password are not blank
   signUpForm.on("submit", function(event) {
     event.preventDefault();

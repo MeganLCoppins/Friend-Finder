@@ -27,6 +27,7 @@ h2 {
 #signUp{
   /* float: left; */
   margin: 8% 20%;
+  text-align: center;
 }
 #loginSignup{
   /* border: 3px solid #185a9d; */
@@ -37,7 +38,22 @@ h2 {
   margin-bottom: 8%;
   background-color: #67C7D4;
 }
-button {
+.hide {
+  display: none;
+}
+.show {
+  font-size: 18px;
+  border: transparent!important;
+  background: transparent!important;
+  color: lightcyan!important;
+}
+.signBtn {
+  background: linear-gradient(to right, #43cea2, #185a9d)!important;
+  border-color: #3aaf8a!important;
+  color: white!important;
+  width: 60%;
+}
+.button {
   width: 60%;
   margin-left: 20%;
   /* background: rgb(178,226,236); */
