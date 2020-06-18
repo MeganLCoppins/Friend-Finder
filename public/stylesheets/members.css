@@ -1,5 +1,7 @@
 body {
-    background-color: #67C7D4;
+    /* background-color: #67C7D4; */
+    background-color: whitesmoke;
+    /* background-color: rgba(178, 208, 212, 0.995); */
 }
 /* The sidebar menu */
 .sidenav {
@@ -30,14 +32,19 @@ body {
   
   /* Style page content */
   .main {
-    margin-left: 160px; /* Same as the width of the sidebar */
+    margin-left: 150px; /* Same as the width of the sidebar */
+    width: 92%;
     padding: 0px 10px;
     text-align: center;
   }
   h2 {
     font-size: 50px;
     font-family: 'Acme', sans-serif;
-      color: rgb(84, 133, 225)!important;
+    margin-top: 0;
+    width: 100%;
+    padding: 2%;
+    color: rgb(84, 133, 225)!important;
+    background-color: rgba(178, 208, 212, 0.995);
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
