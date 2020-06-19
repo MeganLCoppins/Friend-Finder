@@ -43,8 +43,10 @@ body {
     margin-top: 0;
     width: 100%;
     padding: 2%;
-    color: rgb(84, 133, 225)!important;
-    background-color: rgba(178, 208, 212, 0.995);
+    color: #38383E!important;
+    /* color: rgb(84, 133, 225)!important; */
+    /* background-color: rgba(178, 208, 212, 0.995); */
+    background-color: #B2E2EC;
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
