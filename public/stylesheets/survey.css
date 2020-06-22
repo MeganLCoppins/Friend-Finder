@@ -1,17 +1,38 @@
+body {
+    /* background: #B2E2EC; */
+    background: #d1f7eb;
+    /* background: #38383E; */
+}
+img {
+    width: 18%;
+    height: 210px;
+    margin: 0 auto;
+}
 .heading {
     text-align: center;
-    width: 110%;
+    width: 100%;
+    height: 180px;
     background: #3aaf8a;
-    margin-bottom: 3%;
+
+    /* margin-bottom: 3%; */
+    color: #B2E2EC;
 }
 
 .questions {
     background: #B2E2EC;
-    width: 50%;
+    /* background: #3aaf8a; */
+    /* background: rgb(101, 101, 109); */
+    width: 80%;
     margin: 3% auto;
     padding: 3%;
 }
-
+.questions h1 {
+    text-align: center;
+}
+.questions p {
+    text-align: center;
+    font-size: 18px;
+}
 h3{
     margin-bottom: 4%;
 }
