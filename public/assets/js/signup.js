@@ -1,31 +1,66 @@
 $(document).ready(function() {
   // Getting references to our form and input
-  var signUpForm = $("form.signup");
-  var emailInput = $("input#email-input");
-  var passwordInput = $("input#password-input");
-  var usernameInput = $("input#username-input");
-  var show = $(".show");
-  var hide = $(".hide");
+  const signUpForm = $("form.signup");
+  const emailInput = $("input#email-input");
+  const passwordInput = $("input#password-input");
+  const usernameInput = $("input#username-input");
+  const surveyInput = $("select.chosen-select");
 
-  show.on("click", function(event){
-    event.preventDefault();
-    show.addClass("hide").removeClass("show");
-    hide.addClass("show").removeClass("hide");
-  });
+  const answers = [];
+  let sum = 0;
+
+  // var show = $(".show");
+  // var hide = $(".hide");
+
+  // show.on("click", function(event){
+  //   event.preventDefault();
+  //   show.addClass("hide").removeClass("show");
+  //   hide.addClass("show").removeClass("hide");
+  // });
+  surveyInput.change( function(e) {
+    e.preventDefault();
+
+    // let id = e.target.id
+  if($(":selected").map(function(){
+    $(this).val() !== "" 
+  })){
+    answers.push(parseInt($(this).val()));
+  } 
+  console.log(answers);
+  sum = answers.reduce(function(a, b){
+    return a + b;
+  }, 0);
+
+  console.log(sum);
+  return sum;
+  })
+
   // When the signup button is clicked, we validate the email and password are not blank
   signUpForm.on("submit", function(event) {
     event.preventDefault();
-    var userData = {
+    // store selected answers in an array
+    // if($(":selected").map(function(){
+    //   $(this).val() !== "" 
+    // })){
+    //   answers.push(parseInt($(this).val()));
+    // } 
+    // sum equals all numbers in the array added together
+    // sum = answers.reduce(function(a, b){
+    //   return a + b;
+    // }, 0);
+    // create userData object
+    const userData = {
       username: usernameInput.val().trim(),
       email: emailInput.val().trim(),
-      password: passwordInput.val().trim()
+      password: passwordInput.val().trim(),
+      score: sum
     };
 
-    if (!userData.email || !userData.password || !userData.username) {
-      return;
+    if (!userData.email || !userData.password || !userData.username ) {
+      return console.log("nope");
     }
-    // If we have an email and password, run the signUpUser function
-    signUpUser(userData.username, userData.email, userData.password);
+    // If we have a username, email, password, and survey score run the signUpUser function
+    signUpUser(userData.username, userData.email, userData.password, userData.sum);
     emailInput.val("");
     usernameInput.val("");
     passwordInput.val("");
@@ -33,15 +68,16 @@ $(document).ready(function() {
 
   // Does a post to the signup route. If successful, we are redirected to the members page
   // Otherwise we log any errors
-  function signUpUser(username, email, password) {
-    $.post("/api/signup", {
+  function signUpUser(username, email, password, score) {
+    $.post("/api/survey", {
       username: username,
       email: email,
-      password: password
+      password: password,
+      score: score
     })
       .then(function(data) {
         // window.location.replace("/members");
-        window.location.replace("/survey");
+        window.location.replace("/members");
         // If there's an error, handle it by throwing up a bootstrap alert
       })
       .catch(handleLoginErr);

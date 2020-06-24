@@ -5,7 +5,7 @@ body {
 }
 img {
     width: 18%;
-    height: 210px;
+    height: 250px;
     margin: 0 auto;
 }
 .heading {
@@ -17,22 +17,38 @@ img {
     /* margin-bottom: 3%; */
     color: #B2E2EC;
 }
-
-.questions {
+.signup {
+    width: 50%;
+    margin: auto;
+    padding-bottom: 2%;
+}
+.survey {
+    border: 1px solid #38383E;
     background: #B2E2EC;
     /* background: #3aaf8a; */
     /* background: rgb(101, 101, 109); */
     width: 80%;
-    margin: 3% auto;
+    margin: 5% auto;
     padding: 3%;
 }
-.questions h1 {
+.survey h1 {
     text-align: center;
 }
-.questions p {
+.survey p {
     text-align: center;
     font-size: 18px;
+}
+.questions {
+    margin: auto;
+    text-align: center;
 }
 h3{
     margin-bottom: 4%;
 }
+/* .signBtn {
+    margin: 5% auto;
+    border: 2px solid gray;
+    font-weight: bold;
+    width: 20%;
+    padding: .5% 1%;
+} */

@@ -10,157 +10,176 @@
     />
     <link href="stylesheets/survey.css" rel="stylesheet" />
   </head>
-
   <body>
-    <!-- <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
-    </div>
-    <h2>Welcome <span class="member-name"></span></h2>
-  </div>
-</nav> -->
-    <!-- <div class="container-fluid"> -->
     <div class="heading">
-        <img src="./assets/images/friendfinder.png">
-        <!-- <div class="col-md-11"> -->
-            <!-- </div> -->
-        </div>
-        <div class="questions">
-            <h1>The Friend Survey!</h1>
-            <p><strong>Take the survey to find your most compatible friends!</strong></p>
-      <h3>Name</h3>
-      <input type="text" id="name" class="form-control" required />
-      <h3>Link to Photo Image</h3>
-      <input type="text" id="photo" class="form-control" required />
+      <img src="./assets/images/friendfinder.png" />
+    </div>
+    <div class="survey">
+      <h1>The Friend Survey!</h1>
+      <p>
+        <strong>Take the survey to find your most compatible friends!</strong>
+      </p>
       <br />
-      <h3>Question 1</h3>
-      <h4>
+    <div class="questions">
+      <h3><strong>Question 1</strong></h3>
+      <h3>
         You prefer hanging out with a bigger group of people rather than one on
         one.
-      </h4>
+      </h3>
       <select class="chosen-select" id="1">
         <option value=""></option>
         <option value="1"
-          >1 (Absolutely not! I'd prefer a more intimate hangout.)</option
+          >1 (No way!)</option
         >
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Yes! The more the merrier!)</option>
-      </select>
-      <h3>Question 2</h3>
-      <h4>
-        You prefer going out and doing something rather than sitting at home.
-      </h4>
-      <select class="chosen-select" id="2">
-        <option value=""></option>
-        <option value="1">1 (I prefer to be in the comfort of my home!)</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5 (Yes! I love to be out and about!)</option>
-      </select>
-      <h3>Question 3</h3>
-      <h4>
-        Given the choice between spending the weekend at a spa or camping you'd
-        prefer the outdoors.
-      </h4>
-      <select class="chosen-select" id="3">
-        <option value=""></option>
-        <option value="1"
-          >1 (Camping is the last thing I'd be caught doing!)</option
-        >
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5"
-          >5 (Yes! I love anything involving the outdoors!)</option
-        >
-      </select>
-      <h3>Question 4</h3>
-      <h4>You'd consider yourself to be on the creative/artistic side.</h4>
-      <select class="chosen-select" id="4">
-        <option value=""></option>
-        <option value="1"
-          >1 (Creative/artistic is the last thing I'd describe myself
-          as!)</option
-        >
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5"
-          >5 (Yes! I love anything that brings out my creative side!)</option
-        >
-      </select>
-      <h3>Question 6</h3>
-      <h4>Your friends/family would describe you as an extrovert.</h4>
-      <select class="chosen-select" id="6">
-        <option value=""></option>
-        <option value="1">1 (No way! I'm an introvert all the way!)</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5 (Absolutely!)</option>
       </select>
-      <h3>Question 7</h3>
-      <h4>
+      <h3><strong>Question 2</strong></h3>
+      <h3>
+        You prefer going out and doing something rather than sitting at home.
+      </h3>
+      <select class="chosen-select" id="2">
+        <option value=""></option>
+        <option value="1">1 (No way!)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Absolutely!)</option>
+      </select>
+      <h3><strong>Question 3</strong></h3>
+      <h3>
+        Given the choice between spending the weekend indoors or out you'd
+        prefer the outdoors.
+      </h3>
+      <select class="chosen-select" id="3">
+        <option value=""></option>
+        <option value="1"
+          >1 (No way!)</option
+        >
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5"
+          >5 (Absolutely!)</option
+        >
+      </select>
+      <h3><strong>Question 4</strong></h3>
+      <h3>You'd consider yourself to be on the creative/artistic side.</h3>
+      <select class="chosen-select" id="4">
+        <option value=""></option>
+        <option value="1"
+          >1 (No way!)</option
+        >
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5"
+          >5 (Absolutely!)</option
+        >
+      </select>
+      <h3><strong>Question 5</strong></h3>
+      <h3>
+        You'd describe yourself as adventurous.
+      </h3>
+      <select class="chosen-select" id="5">
+        <option value=""></option>
+        <option value="1"
+          >1 (No way!)</option
+        >
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5"
+          >5 (Absolutely!)</option
+        >
+      </select>
+      <h3><strong>Question 6</strong></h3>
+      <h3>Your friends/family would describe you as an extrovert.</h3>
+      <select class="chosen-select" id="6">
+        <option value=""></option>
+        <option value="1">1 (No way!)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Absolutely!)</option>
+      </select>
+      <h3><strong>Question 7</strong></h3>
+      <h3>
         You prefer deeper conversations rather than sticking to a lighter
         conversation.
-      </h4>
+      </h3>
       <select class="chosen-select" id="7">
         <option value=""></option>
-        <option value="1">1 (I prefer to keep it lighter!)</option>
+        <option value="1">1 (No way!)</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Yes!)</option>
+        <option value="5">5 (Absolutely!)</option>
       </select>
-      <h3>Question 8</h3>
-      <h4>
+      <h3><strong>Question 8</strong></h3>
+      <h3>
         You rarely are upset by people.
-      </h4>
+      </h3>
       <select class="chosen-select" id="8">
         <option value=""></option>
-        <option value="1">1 (I get upset from time to time.)</option>
+        <option value="1">1 (No way!)</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (I'm rarely if ever upset by others.)</option>
+        <option value="5">5 (Absolutely!)</option>
       </select>
-      <h3>Question 9</h3>
-      <h4>It's easy for you to relate to others feelings.</h4>
+      <h3><strong>Question 9</strong></h3>
+      <h3>It's easy for you to relate to others feelings.</h3>
       <select class="chosen-select" id="9">
         <option value=""></option>
         <option value="1"
-          >1 (I have a hard time relating to other people's feelings.)</option
+          >1 (No way!)</option
         >
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (Definitely!)</option>
+        <option value="5">5 (Absolutely!)</option>
       </select>
-      <h3>Question 10</h3>
-      <h4>
+      <h3><strong>Question 10</strong></h3>
+      <h3>
         You believe the truth is more important than people's sensitivities.
-      </h4>
+      </h3>
       <select class="chosen-select" id="10">
         <option value=""></option>
         <option value="1"
-          >1 (I'll protect other's feelings at any cost!)</option
+          >1 (No way!)</option
         >
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
-        <option value="5">5 (I believe the truth is above all else!)</option>
+        <option value="5">5 (Absolutely!)</option>
       </select>
+      <br>
     </div>
-    <!-- </div> -->
-    <!-- </div> -->
+        <form class="signup">
+          <div class="form-group">
+            <label for="exampleInputName1"><h3>Username</h3></label>
+            <input type="username" class="form-control" id="username-input" placeholder="Username">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1"><h3>Email address</h3></label>
+            <input type="email" class="form-control" id="email-input" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1"><h3>Password</h3></label>
+            <input type="password" class="form-control" id="password-input" placeholder="Password">
+          </div>
+          <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> <span class="msg"></span>
+          </div>
+          <button type="submit" class="btn btn-default">Sign Up</button>
+        </form>
 
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/js/members.js"></script>
+    <script type="text/javascript" src="./assets/js/signup.js"></script>
   </body>
 </html>

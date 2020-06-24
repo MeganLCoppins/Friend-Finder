@@ -11,18 +11,20 @@ module.exports = function(app) {
     res.json({
       email: req.user.email,
       username: req.user.username,
-      id: req.user.id
+      id: req.user.id,
+      score: req.user.sum
     });
   });
 
   // Route for signing up a user. The user's password is automatically hashed and stored securely thanks to
   // how we configured our Sequelize User Model. If the user is created successfully, proceed to log the user in,
   // otherwise send back an error
-  app.post("/api/signup", function(req, res) {
+  app.post("/api/survey", function(req, res) {
     db.User.create({
       username: req.body.username,
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+      score: req.body.score
     })
       .then(function() {
         res.redirect(307, "/api/login");
@@ -49,7 +51,8 @@ module.exports = function(app) {
       res.json({
         username: req.user.username,
         email: req.user.email,
-        id: req.user.id
+        id: req.user.id,
+        score: req.user.sum
       });
     }
   });

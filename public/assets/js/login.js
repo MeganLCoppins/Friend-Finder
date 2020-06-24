@@ -3,7 +3,16 @@ $(document).ready(function() {
   var loginForm = $("form.login");
   var emailInputLogin = $("input#email-input");
   var passwordInputLogin = $("input#password-input");
+  var signin = $(".signing");
 
+
+  signin.on("click", function(event) {
+    event.preventDefault();
+
+      window.location.replace("/survey");
+    console.log(err);
+
+  })
   // When the form is submitted, we validate there's an email and password entered
   loginForm.on("submit", function(event) {
     event.preventDefault();
