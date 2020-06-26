@@ -9,18 +9,9 @@ $(document).ready(function() {
   const answers = [];
   let sum = 0;
 
-  // var show = $(".show");
-  // var hide = $(".hide");
-
-  // show.on("click", function(event){
-  //   event.preventDefault();
-  //   show.addClass("hide").removeClass("show");
-  //   hide.addClass("show").removeClass("hide");
-  // });
   surveyInput.change( function(e) {
     e.preventDefault();
 
-    // let id = e.target.id
   if($(":selected").map(function(){
     $(this).val() !== "" 
   })){
@@ -31,24 +22,13 @@ $(document).ready(function() {
     return a + b;
   }, 0);
 
-  console.log(sum);
   return sum;
   })
 
   // When the signup button is clicked, we validate the email and password are not blank
   signUpForm.on("submit", function(event) {
     event.preventDefault();
-    // store selected answers in an array
-    // if($(":selected").map(function(){
-    //   $(this).val() !== "" 
-    // })){
-    //   answers.push(parseInt($(this).val()));
-    // } 
-    // sum equals all numbers in the array added together
-    // sum = answers.reduce(function(a, b){
-    //   return a + b;
-    // }, 0);
-    // create userData object
+
     const userData = {
       username: usernameInput.val().trim(),
       email: emailInput.val().trim(),
@@ -60,7 +40,7 @@ $(document).ready(function() {
       return console.log("nope");
     }
     // If we have a username, email, password, and survey score run the signUpUser function
-    signUpUser(userData.username, userData.email, userData.password, userData.sum);
+    signUpUser(userData.username, userData.email, userData.password, userData.score);
     emailInput.val("");
     usernameInput.val("");
     passwordInput.val("");
