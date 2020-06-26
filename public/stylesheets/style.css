@@ -3,7 +3,7 @@ form.login {
   margin-top: 50px;
 }
 body {
-  background-image: url("https://img.freepik.com/free-vector/blue-white-modern-abstract-background_111397-34.jpg?size=626&ext=jpg");
+  background-image: url("../assets/images/background.jpg");
   background-size: cover;
   background-repeat: none;
   font-family: 'Acme', sans-serif;
