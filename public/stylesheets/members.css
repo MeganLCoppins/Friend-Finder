@@ -1,12 +1,14 @@
 body {
     /* background-color: #67C7D4; */
-    background-color: whitesmoke;
+    background-image: url("https://img.freepik.com/free-vector/blue-white-modern-abstract-background_111397-34.jpg?size=626&ext=jpg");
+    background-size: cover;
+    background-repeat: none;
     /* background-color: rgba(178, 208, 212, 0.995); */
 }
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
+    width: 100px; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
@@ -18,7 +20,7 @@ body {
   
   /* The navigation menu links */
   .sidenav a {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 8px 6px 10px;
     text-decoration: none;
     font-size: 25px;
     color: #B2E2EC;
@@ -32,9 +34,8 @@ body {
   
   /* Style page content */
   .main {
-    margin-left: 150px; /* Same as the width of the sidebar */
-    width: 92%;
-    padding: 0px 10px;
+    margin-left: 20px;
+    width: 100%;
     text-align: center;
   }
   h2 {
@@ -42,11 +43,32 @@ body {
     font-family: 'Acme', sans-serif;
     margin-top: 0;
     width: 100%;
-    padding: 2%;
+    padding: 1%;
     color: #38383E!important;
     /* color: rgb(84, 133, 225)!important; */
     /* background-color: rgba(178, 208, 212, 0.995); */
-    background-color: #B2E2EC;
+    /* background-color: #B2E2EC; */
+  }
+  .mainDivs {
+    display: flex;
+    margin-top: 5%;
+
+  }
+  #matches{
+    background-color: #3aaf8a;
+    border: 2px solid #337a64;
+    margin-left: 8%;
+    margin-right: 4%;
+    height: 100px;
+  }
+  h3 {
+    color: whitesmoke;
+    font-size: 30px;
+  }
+  #profile {
+    background-color: #185a9d;
+    border: 2px solid #0d3155;
+    height: 100px;
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
