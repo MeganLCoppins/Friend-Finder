@@ -38,6 +38,11 @@ body {
     width: 100%;
     text-align: center;
   }
+  img {
+    width: 15%;
+    height: 200px;
+    margin: 0 auto;
+}
   h2 {
     font-size: 50px;
     font-family: 'Acme', sans-serif;
@@ -51,12 +56,13 @@ body {
   }
   .mainDivs {
     display: flex;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 
   }
   #matches{
     background-color: #3aaf8a;
     border: 2px solid #337a64;
+    border-radius: 25px;
     margin-left: 8%;
     margin-right: 4%;
     height: 100px;
@@ -68,6 +74,7 @@ body {
   #profile {
     background-color: #185a9d;
     border: 2px solid #0d3155;
+    border-radius: 25px;
     height: 100px;
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
