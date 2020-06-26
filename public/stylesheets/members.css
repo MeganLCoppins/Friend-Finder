@@ -65,11 +65,21 @@ body {
     border-radius: 25px;
     margin-left: 8%;
     margin-right: 4%;
-    height: 100px;
+    height: 50%;
+    padding-bottom: 5%;
   }
   h3 {
     color: whitesmoke;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  #noMatches{
+    padding-top: 2%;
+
+  }
+  h4 {
+    color: whitesmoke;
+    font-size: 25px;
   }
   #profile {
     background-color: #185a9d;
