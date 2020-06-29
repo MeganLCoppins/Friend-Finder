@@ -46,14 +46,22 @@ module.exports = function(app) {
       // The user is not logged in, send back an empty object
       res.json({});
     } else {
-      // Otherwise send back the user's email and id
+      // Otherwise send back the user's username, email and id
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
         username: req.user.username,
         email: req.user.email,
-        id: req.user.id,
-        score: req.user.sum
+        id: req.user.id
       });
     }
   });
+  // route for getting all user's scores in db
+  app.get("/api/members", function(req, res){
+    for(let i = 0; i < req.user.length; i++){
+      res.json({
+        user: req.user,
+        score: req.user.score
+      })
+    }
+  })
 };

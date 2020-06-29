@@ -77,6 +77,9 @@ body {
     padding-top: 2%;
 
   }
+  #hasMatches {
+    display: none;
+  }
   h4 {
     color: whitesmoke;
     font-size: 25px;
