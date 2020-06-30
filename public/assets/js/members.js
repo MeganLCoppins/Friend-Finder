@@ -6,7 +6,7 @@ $(document).ready(function() {
   });
 
   $.get("/api/members").then(function(data){
-    console.log(data.score);
+    console.log(data);
   })
   
 });

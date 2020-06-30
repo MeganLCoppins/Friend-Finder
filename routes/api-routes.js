@@ -55,13 +55,16 @@ module.exports = function(app) {
       });
     }
   });
-  // route for getting all user's scores in db
   app.get("/api/members", function(req, res){
-    for(let i = 0; i < req.user.length; i++){
+
+    db.User.findAll({
+  
+    }).then(function(dbUsers){
       res.json({
-        user: req.user,
-        score: req.user.score
+        users: dbUsers.map(user => user.toJSON())
       })
-    }
+    }).then(function(err){
+      console.log(err);
+    })
   })
 };
