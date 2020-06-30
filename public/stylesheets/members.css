@@ -73,22 +73,24 @@ body {
     font-size: 35px;
     font-weight: bold;
   }
-  #noMatches{
+  /* #noMatches{
     padding-top: 2%;
 
-  }
+  } */
   #hasMatches {
     display: none;
   }
   h4 {
     color: whitesmoke;
     font-size: 25px;
+    padding-top: 2%;
   }
   #profile {
     background-color: #185a9d;
     border: 2px solid #0d3155;
     border-radius: 25px;
-    height: 100px;
+    height: 50%;
+    padding-bottom: 5%;
   }
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
