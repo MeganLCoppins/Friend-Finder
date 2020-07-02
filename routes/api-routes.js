@@ -51,7 +51,12 @@ module.exports = function(app) {
       res.json({
         username: req.user.username,
         email: req.user.email,
-        id: req.user.id
+        id: req.user.id,
+        description: res.user.description,
+        tvShows: res.user.tvShows,
+        movies: res.user.movies,
+        music: res.user.music,
+        activities: res.user.activities
       });
     }
   });
