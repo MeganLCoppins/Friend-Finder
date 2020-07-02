@@ -10,7 +10,6 @@ $(document).ready(function() {
     console.log(data.users);
     userData.push(data.users);
     console.log(userData);
-    $("#noMatches").addClass(hasMatches);
   })
   
 });
