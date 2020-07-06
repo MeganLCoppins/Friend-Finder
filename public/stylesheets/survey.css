@@ -48,6 +48,12 @@ h3{
 #description-input {
     height: 150px;
 }
+#tv-input{
+    height: 80px;
+}
+#movie-input{
+    height: 80px;
+}
 /* .signBtn {
     margin: 5% auto;
     border: 2px solid gray;
