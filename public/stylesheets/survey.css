@@ -1,7 +1,7 @@
 body {
+   
     /* background: #B2E2EC; */
-    background: #B2E2EC;
-    /* background: #38383E; */
+    background: #38383E;
 }
 img {
     width: 18%;
@@ -12,7 +12,10 @@ img {
     text-align: center;
     width: 100%;
     height: 180px;
-    background: #3aaf8a;
+    background-image: url("../assets/images/background.jpg");
+    background-size: cover;
+    background-repeat: none;
+    /* background: #3aaf8a; */
 
     /* margin-bottom: 3%; */
     color: #B2E2EC;
