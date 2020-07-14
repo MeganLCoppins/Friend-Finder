@@ -1,6 +1,6 @@
 body {
     /* background: #B2E2EC; */
-    background: #d1f7eb;
+    background: #B2E2EC;
     /* background: #38383E; */
 }
 img {
@@ -23,8 +23,9 @@ img {
     padding-bottom: 2%;
 }
 .survey {
-    border: 1px solid #38383E;
-    background: #B2E2EC;
+    border-radius: 50px;
+    box-shadow: 10px 10px 18px 18px gray;
+    background: #d1f7eb;
     /* background: #3aaf8a; */
     /* background: rgb(101, 101, 109); */
     width: 80%;
