@@ -5,6 +5,11 @@ $(document).ready(function() {
   const passwordInput = $("input#password-input");
   const usernameInput = $("input#username-input");
   const surveyInput = $("select.chosen-select");
+  const descInput = $("input#description-input");
+  const tvInput = $("input#tv-input");
+  const movieInput = $("input#movie-input");
+  const musicInput = $("input#music-input");
+  const activityInput = $("input#activity-input");
 
   const answers = [];
   let sum = 0;
